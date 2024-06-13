@@ -153,6 +153,12 @@ input {
     border-radius: 9999px;
     color: white;
     margin: 8px 8px 8px 0;
+    border-width: 0;
+}
+
+.purple__btn:hover, .nav__link--signup:hover {
+    background-color: rgb(60, 13, 153);
+    transition: all 300ms ease;
 }
 
 .customer__info {
@@ -348,7 +354,7 @@ figure {
 }
 
 .plan2, .plan__details2, .btn__container2 {
-    background-color: #6415FF;
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
 }
 
 .plan, .plan2, .plan3 {
@@ -357,7 +363,11 @@ figure {
     border-width: 8px 1px 1px 1px;
 }
 
-.plan, .plan2 {
+.plan {
+    border-top-color: rgb(56, 178, 172);
+}
+
+.plan2 {
     border-top-color: #6415FF;
 }
 
@@ -468,6 +478,12 @@ figure {
     background-color: rgb(245, 101, 101);
 }
 
+.buy__btn:hover, .buy__btn2:hover, .buy__btn3:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+    transition: all 300ms ease;
+    transform: translateY(-2%);
+}
+
 /* TESTIMONIALS */
 
 .row__test {
@@ -545,6 +561,7 @@ h4 {
     text-underline-offset: 4px;
     transition: all 300ms ease;
     opacity: .8;
+    cursor: not-allowed;
 }
 
 .footer__logo {
