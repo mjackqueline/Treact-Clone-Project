@@ -616,9 +616,23 @@ h5 {
         align-items: center;
     }
 
+    .email__textbox {
+        display: flex;
+        flex-direction: column;
+    }
+
     .feature__list {
         display: flex;
         flex-flow: column wrap;
+    }
+
+    .feature__para {
+        width: 100%;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column;
     }
 
     .row__qw {
@@ -628,6 +642,19 @@ h5 {
     }
 
     .row__test {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .getstarted {
+        text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -652,10 +679,11 @@ h5 {
 
     .link {
         width: calc(100%/3);
+    }
 }
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width:550px) {
     .nav__links {
         display: none;
-    }  
+    }
 }
