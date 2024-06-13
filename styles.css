@@ -538,7 +538,7 @@ figure {
 .link {
     display: flex;
     flex-direction: column;
-    width: calc (100%/5);
+    width: calc(100%/5);
     margin: 48px 0 0 0;
 }
 
@@ -642,12 +642,20 @@ h5 {
     .values {
         align-items: center;
     }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 32px;
+    }
+
+    .link {
+        width: calc(100%/3);
 }
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width:550px) {
     .nav__links {
         display: none;
-    }
-    
-    
+    }  
 }
