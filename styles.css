@@ -27,11 +27,17 @@ nav {
 .logo__links {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .logo__link {
     font-size: 24px;
     font-weight: 900;
+}
+
+.fa-bars {
+    background-color: transparent;
+    color: #6415FF;
 }
 
 .nav__container {
@@ -82,7 +88,7 @@ li {
 
 .logo {
     height: 40px;
-    margin: 0 12px 0 0;
+    width: 40px;
 }
 
 .header__container {
@@ -191,7 +197,7 @@ figure {
 
 .btn__menu {
     background-color: transparent;
-    font-size: 40px;
+    font-size: 24px;
     text-align: center;
     border: none;
     display: none;
@@ -255,7 +261,7 @@ figure {
     position: absolute;
     right: 20px;
     top: 10px;
-    padding: 8px;
+    padding: 0 18px 4px 0;
 }
 
 /* FEATURES */
@@ -392,7 +398,7 @@ figure {
 
 #values {
     max-width: 1200px;
-    padding: 96px 0 0 40px ;
+    padding: 96px 32px;
     margin: 0 auto;
 }
 
@@ -792,6 +798,9 @@ h5 {
         flex-direction: column;
     }
 
+    .feature__wrapper {
+        width: 80%;
+    }
 
     .row__qw, .row__qw1 {
         display: flex;
