@@ -137,22 +137,26 @@ p {
     width: 90%;
     display: flex;
     justify-content: space-between;
-    border: solid;
+    border: 2px solid rgb(226, 232, 240);
     border-radius: 9999px;
-    border-color: #243E63;
     margin: 16px 8px 16px 0px;
 }
 
 input {
     border: none;
     display: flex;
-    padding: 16px;
+    padding: 16px 0 16px 0;
     border-radius: 9999px;
-    opacity: .6;
     outline: none;
+    margin: 8px 0px 8px 8px;
 }
 
-.purple__btn, .purple__btn--start {
+::placeholder{
+    color: #CBD5E0;
+    font-size: 16px;
+}
+
+.purple__btn, .purple__btn--start, .value__purple__btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,7 +168,12 @@ input {
     border-width: 0;
 }
 
-.purple__btn:hover, .nav__link--signup:hover, .purple__btn--start:hover, .menu__link--signup:hover {
+.purple__btn--start {
+    margin: 8px;
+    padding: 20px 8px 20px 8px;
+}
+
+.purple__btn:hover, .nav__link--signup:hover, .purple__btn--start:hover, .menu__link--signup:hover, .value__purple__btn:hover {
     background-color: rgb(60, 13, 153);
     transition: all 600ms ease;
 }
@@ -173,7 +182,7 @@ input {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.8;
+    letter-spacing: 0.8px;
     --tw-text-opacity: 1;
     color: rgb(160 174 192 / var(--tw-text-opacity));
 }
@@ -187,9 +196,14 @@ figure {
     width: 60%;
 }
 
-.header__img, .img__wrapper {
+.header__img, .img__wrapper, .testimonial__img {
     width: 100%;
-    padding: 40px;
+}
+
+.testimonial__img__wrapper, .img__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn__menu {
@@ -327,6 +341,7 @@ figure {
 
 .qw__container {
     display: flex;
+    padding-top: 36px;
 }
 
 .row__qw, .row__qw1 {
@@ -359,7 +374,7 @@ figure {
 
 #steps {
     max-width: 1200px;
-    padding: 96px 0 0;
+    padding: 96px 0 0 0;
     margin: 0 auto;
 }
 
@@ -403,6 +418,7 @@ figure {
     display: flex;
     flex-direction: column;
     width: 60%;
+    padding-right: 32px;
 }
 
 .value {
@@ -525,6 +541,7 @@ figure {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0.4px;
+    text-align: center;
 }
 
 .maindetail2 {
@@ -593,7 +610,7 @@ figure {
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding-top: 96px;
+    padding: 96px 16px 0 32px;
 }
 
 .client__ratings {
@@ -608,15 +625,25 @@ figure {
 }
 
 .client {
+    width: 100%;
+    padding: 16px;
     display: flex;
+    justify-content: space-evenly;
+}
+
+.client__image {
+    width: 100%;
 }
 
 .client__detail {
-    padding-left: 16px;
+    display: flex;
+    justify-content: center;
 }
 
 .subheading3 {
-    padding: 12px 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .fa-star {
@@ -695,6 +722,7 @@ h5 {
 .footer__rights {
     font-size: 16px;
     color: #F7FAFC;
+    text-align: center;
 }
 
 .social__links {
@@ -742,6 +770,46 @@ h5 {
         height: 24px;
         width: 26px;
     }
+    .email__textbox {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 18px 0 18px 0;
+        width: 100%;
+    }
+    ::placeholder {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .get__started{
+        width: 100%;
+        position: relative;
+
+    }
+    .purple__btn--start {
+        position: absolute;
+        width: 100%;
+        margin: 12px 0;
+        justify-content: center;
+        padding-left: 24px;
+    }
+
+    .customer__info{
+        padding: 80px 0 0 0; 
+    }
+
+    .customer__info--img {
+        padding-top: 12px;
+    }
+}
+
+/*PLAN WRAPPER RESPONSIVENESS */
+
+@media (max-width: 1096px) {
+    .plan__wrapper {
+        width: 60%;
+    }
 }
 
 
@@ -780,21 +848,38 @@ h5 {
         align-items: center;
     }
 
-    .email__textbox {
-        display: flex;
-        flex-direction: column;
-        margin: 18px 0 18px 0;
-        width: 80%;
+    .values {
+        padding: 32px;
     }
 
-    .purple__btn--start {
-        position: absolute;
-        margin: 60px 0;
-        width: 50%;
+    .value__purple__btn, .purple__btn, .purple__btn--start {
+        font-weight: 700;
     }
-   
+
+    .value__purple__btn, .purple__btn {
+        margin: 0;
+    }
+    .subheading3, .client__detail  {
+        padding: 8px 0 0 8px;
+    }
+
+    .client__detail {
+        padding: 0;
+    }
+
+    .client {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .client__image {
+        display: flex;
+        justify-content: center;
+    }
+
     .customer__info {
-        margin: 48px 0 0 0;
+        margin: 76px 0 0 0;
+        padding: 0;
     }
 
     .feature__list {
@@ -824,12 +909,14 @@ h5 {
 
     .row__qw1 {
         flex-direction: column-reverse;
+        padding: 32px 0 32px 0;
     }
 
     .row__test {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 32px;
     }
 
     .steps__wrapper {
@@ -854,6 +941,7 @@ h5 {
     .value {
         width: 80%;
         margin: 32px;
+        padding: 0;
     }
 
     .values, .qualitywork__text {
@@ -882,22 +970,31 @@ h5 {
     .footer__rights {
         margin: 12px 0;
     }
+
     .img_wrapper {
         width: 100%;
         padding: 4px 0 0 0;
     }
-    .screenshotwithborder, .screenshot {
+
+    .screenshotwithborder {
         width: 100%;
     }
 
-    #values, #steps, #features, #pricing, .header__container {
-        padding-top: 32px;
+    #values, #features, #pricing, .header__container, .testimonials {
+        padding: 32px 0 0 0;
         margin: 0;
     }
 
-    #features {
-        padding-bottom: 32px;
-        margin: 0;
+    #steps, .qw__container {
+        padding: 0;
+    }
+
+    .feature__btn {
+        margin: 0px;
+    }
+
+    .row__qw1 {
+        padding: 32px;
     }
 
     .fa-dollar-sign, .fa-suitcase {
@@ -912,5 +1009,73 @@ h5 {
 
     h1 {
         font-size: 32px;
+    }
+
+    .plan__wrapper {
+        width: 72%;
+    }
+
+    .subdetail, .subdetail2 {
+        text-align: center;
+    }
+
+    .link {
+        width: 100%;
+    }
+
+    .client__info{
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* IPHONE 12 PRO */
+@media (max-width:390px){
+
+    h1, .price, .price2 {
+        font-size: 20px; 
+    }
+    h1 {
+        width: 90%;
+    }
+    p, .feature__para {
+        font-size: 12px;
+    }
+
+    .client__detail{
+        padding: 12px 0 0 ;
+    }
+
+    #values, #steps, #pricing, .header__container {
+        padding-top: 32px;
+        margin: 0;
+    }
+    .subheading3{
+        line-height: 1;
+    }
+    .row {
+        width: 80%;     
+    }
+
+    .purple__btn, .purple__btn--start, ::placeholder, .value__purple__btn {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    #steps, #pricing, .header__container {
+        padding-top: 16px;
+    }   
+
+    .screenshot {
+        padding: 32px;
+    }
+
+    .links, .qualitywork__text, .screenshotwithborder, .header__img {
+        padding: 0;
+    }
+
+    #features {
+        padding: 0 32px;
     }
 }

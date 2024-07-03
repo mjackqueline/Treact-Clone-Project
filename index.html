@@ -13,7 +13,7 @@
       <nav>
         <div class="nav__container">
             <div class="logo__links">
-              <img class="logo" src="./assets/logo.svg" alt="" />
+              <a href="/"><img class="logo" src="./assets/logo.svg" alt="" /></a>
               &nbsp;<a href="/" class="logo__link">Treact</a>
             </div>
             <ul class="nav__links">
@@ -68,8 +68,8 @@
               modular components with a variety of pages and components.
             </p>
             <div class="email__textbox">
-              <input type="text" placeholder="Your E-mail Address" />
-              <button class="purple__btn--start">Get Started</button>
+              <div class="email__btn"><input type="email" placeholder="Your E-mail Address" /></div>
+              <div class="get__started"><button class="purple__btn--start">Get Started</button></div>
             </div>
             <div class="customer__info--container">
               <p class="customer__info">Our TRUSTED Customers</p>
@@ -180,7 +180,7 @@
               </h1>
               <p class="feature__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quidem, maiores consequatur consequuntur facilis asperiores fuga libero inventore ea velit voluptate magnam iusto nesciunt rem ullam harum, tenetur veritatis id.
               </p>
-                <div> 
+                <div class="feature__btn">
                  <button class="purple__btn">Learn More</button>
                 </div>
             </div>
@@ -193,7 +193,9 @@
       <section id="steps">
         <div class="steps__container">
           <div class="row__qw">
-            <figure class="header__img"><img class="screenshot" src="./assets/laptopscreenshot.png" alt="">
+            <div class="img__wrapper"><figure class="header__img"><img class="screenshot" src="./assets/laptopscreenshot.png" alt="">
+              </figure>
+            </div>
             </figure>  
             <div class="getstarted">
               <span class="subheading">Easy</span>
@@ -258,8 +260,8 @@
                   <p>We assure you that our templates are designed and created by professional designers.</p>
                 </div>
               </div>
-              <div> 
-                  <button class="purple__btn">Learn More</button>
+              <div class="value__btn"> 
+                  <button class="value__purple__btn">Learn More</button>
               </div>
             </div>
             <figure class="img__wrapper"><img class="header__img" src="./assets/undrawimage.svg" alt=""></figure>
@@ -334,7 +336,7 @@
       <section id="testimonials">
         <div class="container">
           <div class="row__test">
-            <figure class="img__wrapper"><img class="header__img" src="./assets/undrawlove.svg" alt="">
+            <figure class="testimonial__img__wrapper"><img class="testimonial__img" src="./assets/undrawlove.svg" alt="">
             </figure>
             <div class="testimonials">
               <span class="subheading">Testimonials</span>
@@ -352,9 +354,11 @@
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam itaque ab minima reprehenderit similique! Ex soluta nobis sit, accusantium voluptas quasi magni et tenetur repudiandae reiciendis corporis, iste porro ipsum explicabo quisquam asperiores eligendi aut vitae, distinctio dicta tempora voluptatum.
               </p>
               <div class="client">
-                <img class="client__pic" src="./assets/client.avif" alt="">
+                <div class="client__img">
+                  <figure class="client__image"><img class="client__pic" src="./assets/client.avif" alt=""></figure>
+                </div>
                 <div class="client__info"> 
-                  <span class="subheading3">Charlotte Hale</span><br>
+                  <span class="subheading3">Charlotte Hale</span>
                   <p class="client__detail">Director, Delos Inc.</p>
                 </div>
               </div>
