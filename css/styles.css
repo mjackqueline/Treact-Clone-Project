@@ -145,15 +145,25 @@ p {
 input {
     border: none;
     display: flex;
-    padding: 16px 0 16px 0;
+    padding: 20px 0 16px 0;
     border-radius: 9999px;
     outline: none;
-    margin: 8px 0px 8px 8px;
+    margin: 8px 0px 8px 0;
+    width: 100%;
+}
+
+.email__btn{
+    width: 60%;
 }
 
 ::placeholder{
     color: #CBD5E0;
     font-size: 16px;
+}
+
+input[type=email] {
+    text-indent: 24px;
+    font-weight: 700;
 }
 
 .purple__btn, .purple__btn--start, .value__purple__btn {
@@ -770,6 +780,12 @@ h5 {
         height: 24px;
         width: 26px;
     }
+
+    .input{
+        padding: 0;
+        margin: 0;
+    }
+
     .email__textbox {
         position: relative;
         display: flex;
@@ -777,11 +793,12 @@ h5 {
         margin: 18px 0 18px 0;
         width: 100%;
     }
+
     ::placeholder {
-        text-align: center;
         padding: 0;
         margin: 0;
     }
+
     .get__started{
         width: 100%;
         position: relative;
@@ -801,6 +818,10 @@ h5 {
 
     .customer__info--img {
         padding-top: 12px;
+    }
+
+    .email__btn {
+        width: 100%;
     }
 }
 
