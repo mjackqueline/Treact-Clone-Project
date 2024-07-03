@@ -176,6 +176,7 @@ input[type=email] {
     color: white;
     margin: 8px 8px 8px 0;
     border-width: 0;
+    font-weight: 700;
 }
 
 .purple__btn--start {
@@ -871,10 +872,6 @@ h5 {
 
     .values {
         padding: 32px;
-    }
-
-    .value__purple__btn, .purple__btn, .purple__btn--start {
-        font-weight: 700;
     }
 
     .value__purple__btn, .purple__btn {
