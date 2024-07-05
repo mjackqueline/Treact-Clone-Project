@@ -50,6 +50,42 @@ nav {
     margin: 0 auto;
 }
 
+.fadeIn1 {
+    animation: fade-right 500ms backwards;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: contain;
+}
+
+@keyframes fade-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeIn2 {
+    animation: fade-left 500ms backwards;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: contain;
+}
+
+@keyframes fade-left {
+    0% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .nav__links {
     display: flex;
 }
@@ -96,6 +132,7 @@ li {
     padding: 52px;
     max-width: 1280px;
     margin: 0 auto;
+    animation: fade-right 1000ms backwards;
 }
 
 .header__description {
