@@ -50,41 +50,23 @@ nav {
     margin: 0 auto;
 }
 
-.fadeIn1 {
-    animation: fade-right 500ms backwards;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: contain;
+.fade-in-element, .fade-in-element2 {
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-@keyframes fade-right {
-    0% {
-        opacity: 0;
-        transform: translateX(-300px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.fade-in-element {
+    transform: translateX(-300px);
 }
 
-.fadeIn2 {
-    animation: fade-left 500ms backwards;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: contain;
+.fade-in-element2 {
+    transform: translateX(300px);
 }
 
-@keyframes fade-left {
-    0% {
-        opacity: 0;
-        transform: translateX(300px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+.fade-in-element.visible, .fade-in-element2.visible {
+    opacity: 1;
+    transform: translateX(0);
+} 
 
 .nav__links {
     display: flex;
@@ -252,6 +234,10 @@ figure {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.testimonial__img__wrapper{
+    padding: 32px;
 }
 
 .btn__menu {
