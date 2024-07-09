@@ -270,13 +270,6 @@ figure {
     visibility: hidden;
 }
 
-.menu--open .menu__backdrop {
-    visibility: visible;
-    opacity: 1;
-    display: flex;
-    justify-content: center;
-}
-
 .menu__link {
     color: #1A202C;
     font-size: 18px;
@@ -924,6 +917,13 @@ h5 {
 
     .btn__menu {
         display: block;
+    }
+
+    .menu--open .menu__backdrop {
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
     }
 
     h1 {
