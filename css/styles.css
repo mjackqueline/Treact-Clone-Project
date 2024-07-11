@@ -480,13 +480,29 @@ figure {
     margin: 80px 0;
 }
 
+.plan__topper,.plan__topper3 {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 12px;
+    border: 1px solid white;
+    border-bottom: 0px;
+}
+
+.plan__topper {
+    background-image: linear-gradient(115deg, #3DB6B0 0%, #7BE1D5 100%);
+}
+
+.plan__topper3 {
+    background-image: linear-gradient(115deg, #F66969 0%, #FEAEAD 100%);
+}
+
 .plan__container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.plan, .plan__details, .btn__container, .plan2, .plan__details2, .btn__container2, .plan3  {
+.plan__topper, .plan__topper2, .plan__topper3, .plan, .plan__details, .btn__container, .plan2, .plan__details2, .btn__container2, .plan3  {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -498,22 +514,11 @@ figure {
     background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
 }
 
-.plan, .plan2, .plan3 {
+.plan2 {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    border-width: 8px 1px 1px 1px;
-}
-
-.plan {
-    border-top-color: rgb(56, 178, 172);
-}
-
-.plan2 {
-    border-top-color: #6415FF;
-}
-
-.plan3 {
-    border-top-color: rgb(245, 101, 101);
+    padding: 44px 0 32px 0;
+    border-top: 0px;
 }
 
 .btn__container, .btn__container2 {
@@ -525,8 +530,9 @@ figure {
     margin: 32px;
 }
 
-.plan, .plan2, .plan3 {
+.plan, .plan3 {
     padding: 32px 0;
+    border-top: 0px;
 }
 
 .plan__name, .plan__name2 {
@@ -564,6 +570,10 @@ figure {
 
 .plan__details, .plan__details2 {
     padding: 32px;
+}
+
+.plan__details, .plan__details2, .plan__details3 {
+    border-top: 0px;
 }
 
 .maindetail, .maindetail2 {
@@ -619,7 +629,7 @@ figure {
 
 .buy__btn3 {
     color: #F7FAFC;
-    background:linear-gradient(115deg, #F66969 0%, #FEAEAD 100%);;
+    background:linear-gradient(115deg, #F66969 0%, #FEAEAD 100%);
     border: 0px;
 }
 
@@ -627,6 +637,10 @@ figure {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
     transition: all 300ms ease;
     transform: translateY(-2%);
+}
+
+.btn__container, .btn__container2 {
+    border-top: 0px;
 }
 
 /* TESTIMONIALS */
