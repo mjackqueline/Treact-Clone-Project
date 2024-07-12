@@ -199,6 +199,7 @@ input[type=email] {
     margin: 8px 8px 8px 0;
     border-width: 0;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .purple__btn--start {
@@ -614,6 +615,7 @@ figure {
     text-transform: uppercase;
     letter-spacing: 0.8px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .buy__btn {
